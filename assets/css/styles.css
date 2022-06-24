@@ -15,6 +15,7 @@ body, html {
 	border-radius: 14px;
 	padding-bottom: 20px;
 	width: 320px;
+	height: 500px;
 	
 }
 .display {
@@ -25,9 +26,22 @@ body, html {
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
 }
+
+#displayResult {
+	border: 1px solid #f83538;
+	padding: 1% 5%;
+}
+
+#displayResult:focus {
+	outline: none;
+	border-color: #ecedef;
+}
+
+
 .buttons {
 	padding: 20px 20px 0 20px;
 }
+
 .row {
 	width: 280px;
 	float: left;
@@ -49,6 +63,18 @@ input[type=button] {
 	cursor: pointer;
 	
 }
+
+input[type=button]:hover {
+	background-color:#6c756e;
+	color: #fff;
+}
+
+input[type=button]:active {
+	background-color: #ffffff;
+	box-shadow: 0 5px #ffffff;
+	transform: translateY(4px);
+}
+
 input[type=text] {
 	width: 270px;
 	height: 60px;
@@ -69,4 +95,38 @@ input[type=text] {
 	background: #FF0509 !important;
 	color: #ffffff !important;
 	
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #5E5858;
+  line-height: 30px;
+  float: left;
+  border-radius: 50%;
+  padding: 0;
+  margin: 5px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 9px #ffffff;
+}
+
+button:hover {
+	background-color: #6c756e;
+	color: #fff;
+}
+
+button:active {
+	background-color: #ffffff ;
+	box-shadow: 0 5px #ffffff;
+	transform: translateY(4px);
+}
+
+::placeholder {
+	color: #fff;
 }
